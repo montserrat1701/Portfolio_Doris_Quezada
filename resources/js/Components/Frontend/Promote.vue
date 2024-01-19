@@ -46,7 +46,7 @@
                 hover:bg-light-primary
                 dark:hover:bg-dark-primary
               "
-              >Get the Course</a
+              >Go to GitHub</a
             >
           </div>
         </div>
