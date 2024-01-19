@@ -5,23 +5,6 @@ defineProps({
   skills: Object,
   projects: Object,
 });
-/*
-const filteredProjects = ref(props.projects.data);
-const selectedSkill = ref("all");
-
-const filterProjects = (id) => {
-  if (id === "all") {
-    filteredProjects.value = props.projects.data;
-    selectedSkill.value = id;
-  } else {
-    filteredProjects.value = props.projects.data.filter((project) => {
-      return project.skill.id === id;
-    });
-    selectedSkill.value = id;
-  }
-
-  @click="filterProjects('all')" va a bajo de button
-};*/
 </script>
 <template>
   <div class="container mx-auto">
@@ -62,5 +45,12 @@ const filterProjects = (id) => {
         </li>
       </ul>
     </nav>
+    <section class="grid gap-y-12 lg:grid-cols-3 lg:gap-8">
+      <Project 
+        v-for="project in projects.data" 
+        :key="project.id" 
+        :project="project"
+      />
+    </section>
   </div>
 </template>
