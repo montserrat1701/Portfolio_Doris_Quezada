@@ -15,8 +15,8 @@
       >
         <div class="flex space-x-6 items-center justify-center">
           <img
-            class="h-9 w-auto"
-            src="http://portfolio.test/img/logo1.png"
+            class="h-11 w-auto"
+            src="http://portfolio.test/img/logo3.png"
             alt="Laraveller.com"
           />
         </div>

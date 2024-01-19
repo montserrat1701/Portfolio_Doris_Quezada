@@ -4,6 +4,7 @@ defineProps({
   skills: Object,
   projects: Object,
 });
+
 </script>
 <template>
   <section
@@ -16,7 +17,7 @@ defineProps({
         <h2 class="section-title">My latest work</h2>
         <p class="subtitle">
           Here are my latest school projects on which I have been working. Some of 
-          them involve various frameworks and programming languages.
+          them involve various frameworks, programming languages and technologies.
         </p>
       </div>
     </div>

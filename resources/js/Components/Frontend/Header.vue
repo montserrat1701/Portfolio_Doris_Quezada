@@ -34,8 +34,8 @@ onMounted(() => {
     >
       <a href="https://github.com/montserrat1701" class="flex items-center">
         <img
-          src="http://portfolio.test/img/logo1.png"
-          class="mr-3 h-9 sm:h-9"
+          src="http://portfolio.test/img/logo3.png"
+          class="mr-3 h-12 sm:h-12"
           alt="Logo"
         />
         <span
