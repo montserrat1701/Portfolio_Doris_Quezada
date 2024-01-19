@@ -28,7 +28,7 @@
               font-bold
               md:tracking-[-2px]"
             >
-            I'm a student of <br />
+            Student of <br />
             Engineering in computer systems.
           </h1>
           <p
@@ -44,19 +44,9 @@
             I am a beginner developer, wanting to increase my knowledge and my skills 
             in any branch of technology.
           </p>
-          <button
-            class="
-              btn btn-md
-              bg-accent
-              hover:bg-light-secondary hover:text-light-tail-500
-              dark:hover:bg-dark-secondary dark:hover:text-dark-navy-100
-              dark:hover:bg-dark-secondary dark:hover:text-dark-navy-100
-              md:btn-lg
-              transition-all
-            "
-          >
+          <a href="#about" class="btn btn-md bg-accent text-light-tail-100">
             See More About Me
-          </button>
+            </a>
         </div>
         <div class="flex flex-1 justify-end items-center h-full mt-8 md:mt-0">
             <img class="rounded-lg" src="http://portfolio.test/img/hero.jpg" alt="Hero" />

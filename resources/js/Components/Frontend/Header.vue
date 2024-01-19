@@ -108,10 +108,10 @@ onMounted(() => {
                 py-2
                 pr-4
                 pl-3
-                text-light-tail-500
+                text-light-gray
                 rounded
                 dark:text-dark-navy-100
-                hover:text-light-tail-100
+                hover:text-light-secondary
                 dark:hover:text-white
               "
               aria-current="page"

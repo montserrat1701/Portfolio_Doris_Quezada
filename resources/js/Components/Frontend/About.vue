@@ -33,18 +33,16 @@
               <P class="mb-4 text-accent">Student of Engineering in computer systems</P>
               <hr class="mb-8 opacity-90 dark:opacity-5" />
               <p class="mb-8">
-                Soy estudiante de ingeniería en sistemas con una solida formación técnica 
-                en diseño gráfico. 
-                Mis habilidades técnicas abarcan desde lenguajes de programación hasta la 
-                creación de contenido visual utilizando herramientas de diseño gráfico.
-                He tenido la oportunidad de trabajar en proyectos escolares de desarrollo 
-                de software y también he implementado mis bases de diseño gráfico en distintos
-                proyectos. <br />
+                I am a systems engineering student with a strong technical background in graphic 
+                design. My technical skills range from programming languages to creating visual 
+                content using graphic design tools. I have had the opportunity to work on school 
+                software development projects and have also implemented my graphic design foundations 
+                in different projects. <br />
                 <br />
-                Mi objetivo es seguir aprendiendo de nuevos conocimientos 
-                acerca de distintas tecnologías y lenguajes, y estoy muy 
-                emocionada por explorar oportunidades que me permitan 
-                integrar mis habilidades técnicas y creativas.
+                My goal is to continue learning new knowledge about different 
+                technologies and languages, and I am very excited to explore 
+                opportunities that allow me to integrate my technical and 
+                creative skills.
               </p>
             </div>
             <a href="#contact" class="btn btn-md bg-accent text-light-tail-100">
