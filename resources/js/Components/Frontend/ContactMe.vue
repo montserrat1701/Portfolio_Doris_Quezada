@@ -44,8 +44,9 @@ const submit = () => {
       <div class="flex flex-col items-center text-center">
         <h2 class="section-title">Contact Me</h2>
         <p class="subtitle">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga veniam
-          labore nisium illum cupiditate reiciendis a numquam
+          If you'd like to contact me for a project, or speaking opportunity 
+          drop me a line and i´ll going to send you back a message to keep 
+          you in touch.
         </p>
       </div>
       <div class="flex flex-col lg:flex-row lg:gap-x-8">
