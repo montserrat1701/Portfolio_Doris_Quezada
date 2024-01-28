@@ -1,9 +1,9 @@
 <template>
-    <Head title="Projects Index" />
+    <Head title="Abouts Index" />
     <AuthenticatedLayout>
         <template #header>
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                New Project
+                New Information
             </h2>
         </template>
 
@@ -11,7 +11,7 @@
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="flex justify-end m-2 p-2">
                     <Link 
-                        href="/projects/create" 
+                        href="/abouts/create" 
                         class="
                             px-4 
                             py-2 
@@ -20,7 +20,7 @@
                             text-white 
                             rounded-md
                         "
-                        >New Project</Link>
+                        >New About</Link>
                </div>
             </div>
 
@@ -38,7 +38,7 @@
                                     DESCRIPTION
                                 </th>
                                 <th scope="col" class="px-6 py-3">
-                                    SKILL
+                                    PROJECT
                                 </th>
                                 <th scope="col" class="px-6 py-3">
                                     IMAGE
@@ -49,28 +49,31 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr v-for="project in projects.data" :key="project.id"
+                            <tr v-for="about in abouts.data" :key="about.id"
                             class="bg-white dark:bg-gray-800">
                                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                    {{ project.id }}
+                                    {{ about.id }}
                                 </th>
                                 <td class="px-6 py-4">
-                                    {{ project.name }}
+                                    {{ about.name }}
                                 </td>
                                 <td class="px-6 py-4">
-                                    {{ project.skill.name }}
+                                    {{ about.description }}
                                 </td>
                                 <td class="px-6 py-4">
-                                    <img :src="project.image" class="w-12 h-12 rounded-full"/>
+                                    {{ about.project.name }}
+                                </td>
+                                <td class="px-6 py-4">
+                                    <img :src="about.image" class="w-12 h-12 rounded-full"/>
                                 </td>
                                 <td class="px-6 py-4">
                                     <Link 
-                                        :href="route('projects.edit', project.id)" 
+                                        :href="route('abouts.edit', about.id)" 
                                         class="font-medium text-blue-500 hover:text-blue-700 mr-2"
                                         >Edit</Link
                                     >
                                     <Link 
-                                        :href="route('projects.destroy', project.id)" 
+                                        :href="route('abouts.destroy', about.id)" 
                                         method="delete"
                                         as="button"
                                         type="button"
@@ -92,6 +95,6 @@ import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 import { Head, Link } from '@inertiajs/vue3';
 
 defineProps({
-    projects: Object,
+    abouts: Object,
 });
 </script>

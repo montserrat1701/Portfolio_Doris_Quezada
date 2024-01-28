@@ -20,6 +20,7 @@ class ProjectResource extends JsonResource
             'image'=> asset('/storage/' . $this->image),
             'skill'=> new SkillResource($this->whenLoaded('skill')),
             'project_url'=> $this->project_url,
+            'description'=> $this->description
         ];
     }
 }

@@ -17,7 +17,8 @@ class AboutController extends Controller
      */
     public function index()
     {
-       return 'About';
+        $abouts = AboutResource::collection(About::with('project')->get());
+        return Inertia::render('Abouts/Index', compact('abouts'));
     }
 
     /**
@@ -25,7 +26,9 @@ class AboutController extends Controller
      */
     public function create()
     {
-   }
+        $projects = Project::all();
+        return Inertia::render('About/Create', compact('projects'));
+    }
 
     /**
      * Store a newly created resource in storage.
@@ -34,6 +37,25 @@ class AboutController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'image' => ['required', 'image'],
+            'name' => ['required', 'min:3'],
+            'description' => ['required', 'min:6'],
+            'project_id' => ['required']
+        ]);
+
+        if ($request->hasFile('image')) {
+            $image = $request->file('image')->store('abouts');
+            About::create([
+                'project_id'=> $request->project_id,
+                'name'=> $request->name,
+                'description'=> $request->description,
+                'image'=> $image,
+            ]);
+
+            return Redirect::route('abouts.index')->with('message', 'Information created successfuly.');
+        }
+        return Redirect::back();
     }
 
     /**
@@ -43,6 +65,8 @@ class AboutController extends Controller
      */
     public function edit(About $about)
     {
+        $projects = Project::all();
+        return Inertia::render('Abouts/Edit', compact('about', 'projects'));
     }
 
     /**
@@ -53,7 +77,26 @@ class AboutController extends Controller
      */
     public function update(Request $request, About $about)
     {
-      }
+        $image = $project->image;
+        $request->validate([
+            'name' => ['required', 'min:3'],
+            'description' => ['required', 'min:6'],
+            'project_id' => ['required']
+        ]);
+        if($request->hasFile('image')){
+            Storage::delete($abouts->image);
+            $image = $request->file('image')->store('abouts');
+        }
+
+        $about->update([
+            'name' => $request->name,
+            'description'=> $request->description,
+            'project_id' => $request->project_id,
+            'image' => $image
+        ]);
+
+        return Redirect::route('abouts.index')->with('message', 'Information updated successfuly.');
+    }
 
     /**
      * Remove the specified resource from storage.
@@ -62,6 +105,9 @@ class AboutController extends Controller
      */
     public function destroy(About $about)
     {
-        
+        Storage::delete($about->image);
+        $about->delete();
+
+        return Redirect::back()->with('message', 'Information deleted successfuly.');
     }
 }
