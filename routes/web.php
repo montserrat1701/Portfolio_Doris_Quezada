@@ -5,6 +5,7 @@ use App\Http\Controllers\SkillController;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\WelcomeController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\AboutController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -30,6 +31,7 @@ Route::get('/dashboard', function () {
 Route::middleware('auth', 'verified')->group(function () {
     Route::resource('/skills', SkillController::class);
     Route::resource('/projects', ProjectController::class);
+    Route::resource('/abouts', AboutController::class);
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');

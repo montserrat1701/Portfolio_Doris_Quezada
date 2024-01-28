@@ -11,7 +11,8 @@ import ContactMe from '@/Components/Frontend/ContactMe.vue';
 
 defineProps({
     skills: Object,
-    projects: Object
+    projects: Object,
+    abouts: Object,
 });
 
 </script>

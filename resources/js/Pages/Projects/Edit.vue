@@ -47,6 +47,20 @@
                     </div>
 
                     <div>
+                        <InputLabel for="description" value="Description" />
+
+                        <TextInput
+                            id="description"
+                            type="text"
+                            class="mt-1 block w-full rounded-md"
+                            v-model="form.description"
+                            autocomplete="description"
+                        />
+
+                        <InputError class="mt-2" :message="$page.props.errors.description" />
+                    </div>
+
+                    <div>
                         <InputLabel for="project_url" value="URL" />
 
                         <TextInput
@@ -102,7 +116,8 @@ const form = useForm({
     name: props.project?.name,
     image: null,
     skill_id: props.project?.skill_id,
-    project_url: props.project?.project_url
+    project_url: props.project?.project_url,
+    description: props.project?.description
 });
 
 const submit = () => {
@@ -111,7 +126,8 @@ const submit = () => {
         name: form.name,
         image: form.image,
         skill_id: form.skill_id,
-        project_url: form.project_url
+        project_url: form.project_url,
+        description: form.description
     });
 };
 </script>

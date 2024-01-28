@@ -38,9 +38,11 @@ class ProjectController extends Controller
      */
     public function store(Request $request)
     {
+
         $request->validate([
             'image' => ['required', 'image'],
             'name' => ['required', 'min:3'],
+            'description' => ['required', 'min:6'],
             'skill_id' => ['required']
         ]);
 
@@ -49,6 +51,7 @@ class ProjectController extends Controller
             Project::create([
                 'skill_id'=> $request->skill_id,
                 'name'=> $request->name,
+                'description'=> $request->description,
                 'image'=> $image,
                 'project_url'=> $request->project_url
             ]);
@@ -79,6 +82,7 @@ class ProjectController extends Controller
      */
     public function update(Request $request, Project $project)
     {
+
         $image = $project->image;
         $request->validate([
             'name' => ['required', 'min:3'],
@@ -91,6 +95,7 @@ class ProjectController extends Controller
 
         $project->update([
             'name' => $request->name,
+            'description'=> $request->description,
             'skill_id' => $request->skill_id,
             'project_url' => $request->project_url,
             'image' => $image

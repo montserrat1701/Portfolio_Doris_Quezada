@@ -58,9 +58,6 @@
                                     {{ project.name }}
                                 </td>
                                 <td class="px-6 py-4">
-                                    {{ project.description }}
-                                </td>
-                                <td class="px-6 py-4">
                                     {{ project.skill.name }}
                                 </td>
                                 <td class="px-6 py-4">
