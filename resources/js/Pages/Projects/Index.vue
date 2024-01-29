@@ -38,6 +38,9 @@
                                     DESCRIPTION
                                 </th>
                                 <th scope="col" class="px-6 py-3">
+                                    URL
+                                </th>
+                                <th scope="col" class="px-6 py-3">
                                     SKILL
                                 </th>
                                 <th scope="col" class="px-6 py-3">
@@ -59,6 +62,9 @@
                                 </td>
                                 <td class="px-6 py-4">
                                     {{ project.description }}
+                                </td>
+                                <td class="px-6 py-4">
+                                    {{ project.project_url }}
                                 </td>
                                 <td class="px-6 py-4">
                                     {{ project.skill.name }}

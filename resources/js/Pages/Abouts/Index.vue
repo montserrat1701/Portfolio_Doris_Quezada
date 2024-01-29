@@ -38,10 +38,10 @@
                                     DESCRIPTION
                                 </th>
                                 <th scope="col" class="px-6 py-3">
-                                    PROJECT
+                                    IMAGE
                                 </th>
                                 <th scope="col" class="px-6 py-3">
-                                    IMAGE
+                                    
                                 </th>
                                 <th scope="col" class="px-6 py-3">
                                     
@@ -61,9 +61,6 @@
                                     {{ about.description }}
                                 </td>
                                 <td class="px-6 py-4">
-                                    {{ about.project.name }}
-                                </td>
-                                <td class="px-6 py-4">
                                     <img :src="about.image" class="w-12 h-12 rounded-full"/>
                                 </td>
                                 <td class="px-6 py-4">
@@ -80,6 +77,10 @@
                                         class="font-medium text-red-500 hover:text-red-700 mr-2"
                                         >Delete</Link
                                     >
+                                </td>
+
+                                <td class="px-6 py-4">
+                                    
                                 </td>
                             </tr>
                         </tbody>

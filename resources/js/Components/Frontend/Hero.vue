@@ -1,4 +1,7 @@
 <script setup>
+defineProps({
+  abouts: Object,
+});
 </script>
 <template>
   <section
@@ -127,7 +130,7 @@
                   mr-3
                   sm:mr-4
                 "
-                href="https://www.youtube.com/channel/UCX5JRhpKdQ6w2J1KTlHQyQA"
+                href="https://www.linkedin.com/in/doris-montserrat-quezada-garcia-5503a52b1/"
               >
                 <svg
                   width="14"
