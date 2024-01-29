@@ -98,13 +98,13 @@ defineProps({
 })
 
 const form = useForm({
-    name: "",
+    text: "",
     image: null,
     project_id: "",
     description: ""
 });
 
 const submit = () => {
-    form.post(route('projects.store'));
+    form.post(route('abouts.store'));
 };
 </script>

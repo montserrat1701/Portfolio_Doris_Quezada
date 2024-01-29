@@ -27,7 +27,7 @@ class AboutController extends Controller
     public function create()
     {
         $projects = Project::all();
-        return Inertia::render('About/Create', compact('projects'));
+        return Inertia::render('Abouts/Create', compact('projects'));
     }
 
     /**
@@ -39,7 +39,7 @@ class AboutController extends Controller
     {
         $request->validate([
             'image' => ['required', 'image'],
-            'name' => ['required', 'min:3'],
+            'text' => ['required', 'min:3'],
             'description' => ['required', 'min:6'],
             'project_id' => ['required']
         ]);
@@ -48,7 +48,7 @@ class AboutController extends Controller
             $image = $request->file('image')->store('abouts');
             About::create([
                 'project_id'=> $request->project_id,
-                'name'=> $request->name,
+                'text'=> $request->text,
                 'description'=> $request->description,
                 'image'=> $image,
             ]);
@@ -77,19 +77,18 @@ class AboutController extends Controller
      */
     public function update(Request $request, About $about)
     {
-        $image = $project->image;
+        $image = $about->image;
         $request->validate([
-            'name' => ['required', 'min:3'],
-            'description' => ['required', 'min:6'],
+            'text' => ['required', 'min:3'],
             'project_id' => ['required']
         ]);
         if($request->hasFile('image')){
-            Storage::delete($abouts->image);
+            Storage::delete($about->image);
             $image = $request->file('image')->store('abouts');
         }
 
         $about->update([
-            'name' => $request->name,
+            'text' => $request->text,
             'description'=> $request->description,
             'project_id' => $request->project_id,
             'image' => $image

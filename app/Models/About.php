@@ -9,9 +9,9 @@ class About extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['project_id', 'name', 'description', 'image'];
+    protected $fillable = ['project_id', 'text', 'description', 'image'];
 
-    public function projects()
+    public function project()
     {
         return $this->belongsTo(Project::class);
     }

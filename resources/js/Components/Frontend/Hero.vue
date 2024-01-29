@@ -4,7 +4,7 @@
   <section
     id="home"
     class="
-      lg:h-[85vh]
+      lg:h-[90vh]
       flex
       items-center
       bg-light-primary
@@ -29,7 +29,7 @@
               md:tracking-[-2px]"
             >
             Student of <br />
-            Engineering in computer systems.
+            Computer Systems Engineering.
           </h1>
           <p
             class="
@@ -41,7 +41,7 @@
               lg:text-left
             "
           >
-            I am a beginner developer, wanting to increase my knowledge and my skills 
+            I´m a frontend developer, wanting to increase my knowledge and my skills 
             in any branch of technology.
           </p>
           <a href="#about" class="btn btn-md bg-accent text-light-tail-100">

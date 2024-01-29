@@ -32,7 +32,7 @@
                                     ID
                                 </th>
                                 <th scope="col" class="px-6 py-3">
-                                    NAME
+                                    TEXT
                                 </th>
                                 <th scope="col" class="px-6 py-3">
                                     DESCRIPTION
@@ -55,7 +55,7 @@
                                     {{ about.id }}
                                 </th>
                                 <td class="px-6 py-4">
-                                    {{ about.name }}
+                                    {{ about.text }}
                                 </td>
                                 <td class="px-6 py-4">
                                     {{ about.description }}
