@@ -2,12 +2,12 @@
     <Head title="Abouts Index" />
     <AuthenticatedLayout>
         <template #header>
-            <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                New Information
+            <h2 class="font-semibold text-xl text-white leading-tight">
+                EDIT YOUR ABOUTS
             </h2>
         </template>
 
-        <div class="py-12">
+        <div class="py-5">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="flex justify-end m-2 p-2">
                     <Link 
@@ -16,6 +16,7 @@
                             px-4 
                             py-2 
                             bg-indigo-500 
+                            dark:bg-gray-700
                             hover:bg-indigo-700 
                             text-white 
                             rounded-md
@@ -26,7 +27,7 @@
 
             <div class="relative overflow-x-auto">
                     <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                        <thead class="text-xs text-white uppercase bg-indigo-500 dark:bg-gray-700 dark:text-gray-400">
                             <tr>
                                 <th scope="col" class="px-6 py-3">
                                     ID

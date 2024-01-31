@@ -8,7 +8,7 @@ import { Head } from '@inertiajs/vue3';
 
     <AuthenticatedLayout>
         <template #header>
-            <h2 class="font-semibold text-xl text-gray-800 leading-tight">Home Edit</h2>
+            <h2 class="font-semibold text-xl text-white dark:text-gray-200 leading-tight"> 🎀 WELCOME 🎀 </h2>
         </template>
 
         <div class="py-12">
@@ -16,6 +16,9 @@ import { Head } from '@inertiajs/vue3';
                 <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                     <div class="p-6 text-gray-900">Edit your home information!</div>
                 </div>
+            </div>
+            <div class="flex justify-center items-center h-full pt-8">
+                <img class="max-w-full max-h-full rounded-lg w-64 h-64" src="http://portfolio.test/img/editar.png" alt="home" />
             </div>
         </div>
     </AuthenticatedLayout>
