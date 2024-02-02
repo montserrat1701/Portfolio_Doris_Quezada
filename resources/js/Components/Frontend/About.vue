@@ -27,12 +27,12 @@
             "
           >
             <div class="flex flex-col">
-              <h2 class="text-3xl lg:text-4xl font-medium lg:font-extrabold mb-3">
+              <h2 class="text-3xl lg:text-4xl font-extrabold mb-3">
                 About Me
               </h2>
-              <P class="mb-4 text-accent">Student of Computer Systems Engineering</P>
+              <P class="mb-4 text-indigo-300">Student of Computer Systems Engineering</P>
               <hr class="mb-8 opacity-90 dark:opacity-5" />
-              <p class="mb-8">
+              <p class="mb-8 text-gray-500 dark:text-gray-300">
                 I´m a systems engineering student with a strong technical background in graphic 
                 design. My technical skills range from programming languages to creating visual 
                 content using graphic design tools. I have had the opportunity to work on school 
@@ -45,7 +45,7 @@
                 technologies and embracing challenges to grow as a frontend developer.
               </p>
             </div>
-            <a href="#contact" class="btn btn-md bg-accent text-light-tail-100">
+            <a href="#contact" class="btn btn-md bg-indigo-300 hover:bg-indigo-500 dark:bg-dark-primary text-white rounded-md font-extrabold">
               Contact me
             </a>
           </div>

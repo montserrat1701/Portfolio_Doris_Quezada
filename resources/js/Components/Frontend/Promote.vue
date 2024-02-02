@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-light-tail-100 dark:bg-dark-navy-500">
+    <div class="bg-indigo-100 dark:bg-dark-navy-500">
       <div
         class="
           container
@@ -35,15 +35,15 @@
                 justify-center
                 rounded-md
                 border border-transparent
-                bg-light-secondary
+                bg-indigo-300
                 dark:bg-dark-secondary
                 px-5
                 py-3
                 text-base
-                font-medium
-                text-dark-primary
+                font-extrabold
+                text-white
                 dark:text-white
-                hover:bg-light-primary
+                hover:bg-indigo-500
                 dark:hover:bg-dark-primary
               "
               >Go to GitHub</a

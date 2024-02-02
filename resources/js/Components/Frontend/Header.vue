@@ -24,8 +24,8 @@ onMounted(() => {
   <nav
     class="w-full fixed z-20 border-gray-200 px-2 sm:px-4 py-2.5 rounded"
     :class="{
-      'bg-light-tail-100 dark:bg-dark-primary': scrollBg,
-      'bg-light-tail-100 dark:bg-slate-800': !scrollBg,
+      'bg-indigo-100 dark:bg-dark-primary': scrollBg,
+      'bg-indigo-100 dark:bg-slate-800': !scrollBg,
     }"
   >
     <div
@@ -37,13 +37,15 @@ onMounted(() => {
           src="http://portfolio.test/img/logo3.png"
           class="mr-3 h-12 sm:h-12"
           alt="Logo"
+          style="width: 65px; height: 65px"
         />
         <span
           class="
             self-center
             text-xl
-            font-semibold
+            font-extrabold
             whitespace-nowrap
+            text-light-tail-500
             dark:text-white
           "
           >MY PORTFOLIO</span
@@ -95,7 +97,7 @@ onMounted(() => {
             p-4
             mt-4
             rounded-lg
-            border border-light-tail-500
+            border border-indigo-500
             dark:border-dark-navy-100
             md:flex-row md:space-x-8 md:mt-0 md:font-medium md:border-0
           "
@@ -108,10 +110,11 @@ onMounted(() => {
                 py-2
                 pr-4
                 pl-3
-                text-light-gray
+                text-light-tail-500
+                font-semibold
                 rounded
                 dark:text-dark-navy-100
-                hover:text-light-secondary
+                hover:text-pink-300
                 dark:hover:text-white
               "
               aria-current="page"

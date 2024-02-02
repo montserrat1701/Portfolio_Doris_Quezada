@@ -42,14 +42,14 @@ const submit = () => {
       }"
     >
       <div class="flex flex-col items-center text-center">
-        <h2 class="section-title">Contact Me</h2>
-        <p class="subtitle">
+        <h2 class="section-title font-extrabold">Contact Me</h2>
+        <p class="subtitle text-gray-500 dark:text-gray-300">
           If you'd like to contact me for a project, or speaking opportunity 
           drop me a line and i´ll going to send you back a message to keep 
           you in touch.
         </p>
       </div>
-      <div class="flex flex-col lg:flex-row lg:gap-x-8">
+      <div class="flex flex-col lg:flex-row lg:gap-x-8 items-center">
         <div
           class="
             flex flex-1 flex-col
@@ -62,7 +62,7 @@ const submit = () => {
           <div class="flex flex-col lg:flex-row gap-x-4">
             <div
               class="
-                text-accent
+                text-pink-400
                 rounded-sm
                 w-14
                 h-14
@@ -91,15 +91,15 @@ const submit = () => {
               </svg>
             </div>
             <div>
-              <h4 class="font-body text-xl mb-1">Have a question?</h4>
-              <P class="mb-1 text-paragraph">I am here to help you.</P>
-              <p class="text-accent font-normal">Email me at violetismo22@gmail.com</p>
+              <h4 class="font-extrabold text-xl mb-1">Have a question?</h4>
+              <P class="mb-1 text-gray-500">I am here to help you.</P>
+              <p class="text-indigo-400 font-normal">Email me at violetismo22@gmail.com</p>
             </div>
           </div>
           <div class="flex flex-col lg:flex-row gap-x-4">
             <div
               class="
-                text-accent
+                text-pink-400
                 rounded-sm
                 w-14
                 h-14
@@ -133,9 +133,9 @@ const submit = () => {
               </svg>
             </div>
             <div>
-              <h4 class="font-body text-xl mb-1">Current Location</h4>
-              <P class="mb-1 text-paragraph">Tepic, Nayarit.</P>
-              <p class="text-accent font-normal">Serving clients worldwide.</p>
+              <h4 class="font-extrabold text-xl mb-1">Current Location</h4>
+              <P class="mb-1 text-gray-500">Tepic, Nayarit.</P>
+              <p class="text-indigo-400 font-normal">Serving clients worldwide.</p>
             </div>
           </div>
         </div>
@@ -158,7 +158,7 @@ const submit = () => {
               <input
                 v-model="form.name"
                 type="text"
-                class="input"
+                class="input border-b-1 border-pink-200"
                 placeholder="Your Name"
               />
               <span v-if="form.errors.name" class="text-sm m-2 text-red-400">{{
@@ -169,7 +169,7 @@ const submit = () => {
               <input
                 v-model="form.email"
                 type="email"
-                class="input"
+                class="input border-b-1 border-pink-200"
                 placeholder="Your Email"
               />
               <span v-if="form.errors.email" class="text-sm m-2 text-red-400">{{
@@ -179,7 +179,7 @@ const submit = () => {
           </div>
           <textarea
             v-model="form.body"
-            class="textarea"
+            class="textarea border-pink-200"
             placeholder="Your Meassage"
             spellcheck="false"
           ></textarea>
@@ -187,7 +187,7 @@ const submit = () => {
             form.errors.body
           }}</span>
 
-          <button class="btn btn-lg bg-accent hover:bg-secondary text-white">
+          <button class="btn btn-lg bg-indigo-300 hover:bg-indigo-500 text-white rounded-md font-extrabold">
             Send message
           </button>
         </form>

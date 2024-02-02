@@ -33,14 +33,14 @@ const filterProjects = (id) => {
               text-center
               px-4
               py-2
-              hover:bg-accent
+              hover:bg-pink-300
               text-white
               rounded-md
             "
             :class="[
               selectedSkill === 'all'
-                ? 'bg-accent'
-                : 'bg-light-tail-500 dark:bg-dark-navy-100',
+                ? 'bg-indigo-500'
+                : 'bg-indigo-300 dark:bg-dark-navy-100',
             ]"
           >
             All
@@ -58,14 +58,14 @@ const filterProjects = (id) => {
               text-center
               px-4
               py-2
-              hover:bg-accent
+              hover:bg-pink-300
               text-white
               rounded-md
             "
             :class="[
               selectedSkill == projectSkill.id
-                ? 'bg-accent'
-                : 'bg-light-tail-500 dark:bg-dark-navy-100',
+                ? 'bg-indigo-500'
+                : 'bg-indigo-300 dark:bg-dark-navy-100',
             ]"
           >
             {{ projectSkill.name }}

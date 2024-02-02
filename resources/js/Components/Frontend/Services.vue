@@ -19,18 +19,18 @@
       }"
     >
       <div class="flex flex-col items-center text-center">
-        <h2 class="section-title">What I do for clients</h2>
-        <p class="subtitle">
+        <h2 class="section-title font-extrabold">What I do for clients</h2>
+        <p class="subtitle text-gray-600 dark:text-gray-300">
           These are some of the branches that offer my services and skills, 
           covering all my knowledge and what I have learned during my stay 
           in social service.
         </p>
       </div>
       <div class="grid lg:grid-cols-4 gap-8">
-        <div class="bg-light-tail-100 dark:bg-dark-navy-500 p-6 rounded-2xl">
+        <div class="bg-indigo-300 dark:bg-dark-navy-500 p-6 rounded-2xl">
           <div
             class="
-              text-accent
+              text-indigo-600
               rounded-sm
               w-12
               h-12
@@ -56,16 +56,16 @@
               />
             </svg>
           </div>
-          <h4 class="text-xl font-medium mb-2">Web Design</h4>
-          <p>
+          <h4 class="text-xl mb-2 text-light-primary font-extrabold">Web Design</h4>
+          <p class="text-dark-primary dark:text-gray-300">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio
             perferendis volm quibusdam ullam qui dolore.
           </p>
         </div>
-        <div class="bg-light-tail-100 dark:bg-dark-navy-500 p-6 rounded-2xl">
+        <div class="bg-indigo-100 dark:bg-dark-navy-500 p-6 rounded-2xl">
           <div
             class="
-              text-accent
+              text-light-tail-500
               rounded-sm
               w-12
               h-12
@@ -96,16 +96,16 @@
               />
             </svg>
           </div>
-          <h4 class="text-xl font-medium mb-2">Web Development</h4>
-          <p>
+          <h4 class="text-xl font-extrabold mb-2">Web Development</h4>
+          <p class="text-gray-500 dark:text-gray-300">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio
             perferendis volm quibusdam ullam qui dolore.
           </p>
         </div>
-        <div class="bg-light-tail-100 dark:bg-dark-navy-500 p-6 rounded-2xl">
+        <div class="bg-indigo-300 dark:bg-dark-navy-500 p-6 rounded-2xl">
           <div
             class="
-              text-accent
+              text-pink-400
               rounded-sm
               w-12
               h-12
@@ -131,16 +131,16 @@
               />
             </svg>
           </div>
-          <h4 class="text-xl font-medium mb-2">Graphic Design</h4>
-          <p>
+          <h4 class="text-xl font-extrabold mb-2 text-light-primary">Graphic Design</h4>
+          <p class="text-dark-primary dark:text-gray-300">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio
             perferendis volm quibusdam ullam qui dolore.
           </p>
         </div>
-        <div class="bg-light-tail-100 dark:bg-dark-navy-500 p-6 rounded-2xl">
+        <div class="bg-indigo-100 dark:bg-dark-navy-500 p-6 rounded-2xl">
           <div
             class="
-              text-accent
+              text-purple-500
               rounded-sm
               w-12
               h-12
@@ -166,8 +166,8 @@
               />
             </svg>
           </div>
-          <h4 class="text-xl font-medium mb-2">Basic Computers Maintenance</h4>
-          <p>
+          <h4 class="text-xl font-extrabold mb-2">Basic Computers Maintenance</h4>
+          <p class="text-gray-500 dark:text-gray-300">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio
             perferendis volm quibusdam ullam qui dolore.
           </p>

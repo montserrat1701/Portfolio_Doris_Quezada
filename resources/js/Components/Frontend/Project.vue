@@ -23,23 +23,24 @@ defineProps({
     </div>
     <span
       class="
-        group-hover:text-light-tail-500
+       group-hover:text-pink-300
+        text-2xl
+        font-semibold
+        text-indigo-400
         capitalize
-        text-accent text-sm
         mb-3
       "
-      >{{ project.skill.name }}</span
+      >{{ project.name }}</span
     >
     <h3
       class="
-        group-hover:text-light-tail-500
-        text-2xl
-        font-semibold
+      group-hover:text-pink-300
         capitalize
+        text-gray-500 text-sm
         mb-3
       "
     >
-      {{ project.name }}
+      {{ project.description }}
     </h3>
   </Link>
 </template>

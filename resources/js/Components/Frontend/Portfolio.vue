@@ -14,8 +14,8 @@ defineProps({
     <div
       class="container mx-auto">
       <div class="flex flex-col items-center text-center">
-        <h2 class="section-title">My latest work</h2>
-        <p class="subtitle">
+        <h2 class="section-title font-extrabold">My latest work</h2>
+        <p class="subtitle text-gray-500 dark:text-gray-300">
           Here are my latest school projects on which I have been working. Some of 
           them involve various frameworks, programming languages and technologies.
         </p>

@@ -21,7 +21,7 @@ defineProps({
       class="container mx-auto h-full">
       <div class="flex flex-col md:flex-row items-center h-full pt-8">
         <div class="flex-1 flex flex-col items-center lg:items-start">
-          <p class="text-lg text-dark-accent text-md mb-[22px]">Hey, I'm Doris! 👾</p>
+          <p class="text-lg text-dark-accent font-extrabold text-indigo-300 text-md mb-[22px]">Hey, I'm Doris! 👾</p>
           <h1
             class="
               text-4xl
@@ -41,17 +41,18 @@ defineProps({
               md:pt-6 md:pb-12
               max-w-[480px]
               text-lg text-center
+              text-gray-600
               lg:text-left
             "
           >
             I´m a frontend developer, wanting to increase my knowledge and my skills 
             in any branch of technology.
           </p>
-          <a href="#about" class="btn btn-md bg-accent text-light-tail-100">
+          <a href="#about" class="btn btn-md bg-indigo-300 text-white hover:bg-indigo-500 font-extrabold rounded-md">
             See More About Me
           </a>
           <div class="pt-12">
-            <h5 class="text lg flex justify-center lg:justify-start items-center text-black dark:text-white mb-2">
+            <h5 class="text lg flex justify-center lg:justify-start items-center text-xl font-extrabold text-dark-primary dark:text-white mb-2">
               Follow me on
             </h5>
             <div class="flex items-center mb-6">
@@ -63,8 +64,8 @@ defineProps({
                   flex
                   items-center
                   justify-center
-                  border border-white
-                  text-black
+                  border border-purple-200
+                  text-purple-500
                   dark:text-white
                   hover:bg-light-secondary hover:border-light-secondary
                   dark:hover:bg-dark-secondary dark:hover:border-dark-secondary
@@ -93,8 +94,8 @@ defineProps({
                   flex
                   items-center
                   justify-center
-                  border border-white
-                  text-black
+                  border border-red-200
+                  text-red-500
                   dark:text-white
                   hover:bg-light-secondary hover:border-light-secondary
                   dark:hover:bg-dark-secondary dark:hover:border-dark-secondary
@@ -122,8 +123,8 @@ defineProps({
                   flex
                   items-center
                   justify-center
-                  border border-white
-                  text-black
+                  border border-blue-200
+                  text-blue-500
                   dark:text-white
                   hover:bg-light-secondary hover:border-light-secondary
                   dark:hover:bg-dark-secondary dark:hover:border-dark-secondary
