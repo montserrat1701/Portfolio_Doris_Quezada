@@ -11,6 +11,27 @@
             <div class="max-w-md mx-auto sm:px-6 lg:px-8 bg-white">
                 <form class="p-4" @submit.prevent="submit">
                     <div>
+                        <InputLabel for="project_id" value="Project" />
+                        <select 
+                        v-model="form.project_id" 
+                        id="project_id" 
+                        name="project_id"
+                        class="mt-1 
+                            block
+                            w-full
+                            pl-3
+                            pr-10
+                            py-2
+                            text-base
+                            border-gray-300
+                            focus:outline-none focus:ring-indigo-500 focus:border-indigo-500
+                            sm:text-sm
+                            rounded-md">
+                            <option v-for="project in projects" :key="project.id" :value="project.id">{{ project.name }}</option>
+                        </select>
+                        <InputError class="mt-2" :message="form.errors.project_id" />
+                    </div>
+                    <div>
                         <InputLabel for="text" value="Text" />
 
                         <TextInput
@@ -72,10 +93,15 @@ import InputLabel from '@/Components/InputLabel.vue';
 import PrimaryButton from '@/Components/PrimaryButton.vue';
 import TextInput from '@/Components/TextInput.vue';
 
+defineProps({
+    projects: Array
+})
+
 const form = useForm({
     text: "",
-    description: "",
-    image: null
+    image: null,
+    project_id: "",
+    description: ""
 });
 
 const submit = () => {

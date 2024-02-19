@@ -17,7 +17,7 @@ class AboutController extends Controller
      */
     public function index()
     {
-        $abouts = AboutResource::collection(About::all());
+        $abouts = AboutResource::collection(About::with('project')->get());
         return Inertia::render('Abouts/Index', compact('abouts'));
     }
 
@@ -26,7 +26,8 @@ class AboutController extends Controller
      */
     public function create()
     {
-        return Inertia::render('Abouts/Create', compact('abouts'));
+        $projects = Project::all();
+        return Inertia::render('Abouts/Create', compact('projects'));
     }
 
     /**
@@ -39,12 +40,14 @@ class AboutController extends Controller
         $request->validate([
             'image' => ['required', 'image'],
             'text' => ['required', 'min:3'],
-            'description' => ['required', 'min:6']
+            'description' => ['required', 'min:6'],
+            'project_id' => ['required']
         ]);
 
         if ($request->hasFile('image')) {
             $image = $request->file('image')->store('abouts');
             About::create([
+                'project_id'=> $request->project_id,
                 'text'=> $request->text,
                 'description'=> $request->description,
                 'image'=> $image,
@@ -62,7 +65,8 @@ class AboutController extends Controller
      */
     public function edit(About $about)
     {
-        return Inertia::render('Abouts/Edit', compact('about'));
+        $projects = Project::all();
+        return Inertia::render('Abouts/Edit', compact('about', 'projects'));
     }
 
     /**
@@ -76,7 +80,7 @@ class AboutController extends Controller
         $image = $about->image;
         $request->validate([
             'text' => ['required', 'min:3'],
-            'description' => ['required']
+            'project_id' => ['required']
         ]);
         if($request->hasFile('image')){
             Storage::delete($about->image);
@@ -86,6 +90,7 @@ class AboutController extends Controller
         $about->update([
             'text' => $request->text,
             'description'=> $request->description,
+            'project_id' => $request->project_id,
             'image' => $image
         ]);
 

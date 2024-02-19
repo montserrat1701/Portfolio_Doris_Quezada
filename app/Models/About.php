@@ -9,10 +9,10 @@ class About extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['text', 'description', 'image'];
+    protected $fillable = ['project_id', 'text', 'description', 'image'];
 
-    public function projects()
+    public function project()
     {
-        return $this->hasMany(Project::class);
+        return $this->belongsTo(Project::class);
     }
 }

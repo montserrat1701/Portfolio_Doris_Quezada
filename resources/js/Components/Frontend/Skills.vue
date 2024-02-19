@@ -7,9 +7,9 @@ defineProps({
 <template>
   <section class="bg-ingino-100 dark:bg-dark-navy-500 py-16">
     <div class="container mx-auto ">
-      <div class="grid grid-cols-8 md:grid-flow-col">
+      <div class="grid grid-cols-6 md:grid-flow-col">
         <div
-          class="flex items-center justify-center"
+          class="flex items-center justify-center w-13 h-12"
           v-for="skill in skills.data"
           :key="skill.id"
         >
