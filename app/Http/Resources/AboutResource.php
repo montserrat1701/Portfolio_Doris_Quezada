@@ -21,6 +21,9 @@ class AboutResource extends JsonResource
             'project'=> new ProjectResource($this->whenLoaded('project')),
             'description'=> $this->description
         ];
+    }
+}
+
 /*
         if ($request->file()) {
             $fileName = $request->logo_url->getClientOriginalName();
@@ -28,9 +31,6 @@ class AboutResource extends JsonResource
             $filePath = $request->file('logo_url')->storeAs('abouts/' . $subfolderName, $fileName, 'public');
             $user->logo_url = '/storage/' . $filePath;
         }*/
-    }
-}
-
 
 /*
 if ($request->file()) {

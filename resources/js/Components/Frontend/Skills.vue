@@ -12,7 +12,7 @@ defineProps({
           v-for="skill in skills.data"
           :key="skill.id"
         >
-          <template v-if="skill.name == 'Laravel'">
+          <template v-if="skill.name">
             <div class="flex items-center justify-center w-13 h-12">
               <img :src="skill.image" :alt="skill.name" class="lg:h-20"/>
             </div>

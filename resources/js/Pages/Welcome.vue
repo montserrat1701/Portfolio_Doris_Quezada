@@ -8,6 +8,7 @@ import Skills from '@/Components/Frontend/Skills.vue';
 import Portfolio from '@/Components/Frontend/Portfolio.vue';
 import Services from '@/Components/Frontend/Services.vue';
 import ContactMe from '@/Components/Frontend/ContactMe.vue';
+import Extraers from '@/Components/Frontend/Extraer.vue';
 
 defineProps({
     skills: Object,
@@ -34,5 +35,7 @@ defineProps({
         <Services />
         <!-- Contact primary -->
         <ContactMe />
+        <!-- Extraers primary -->
+        <Extraers :abouts="abouts"/>
     </FrontendLayout>
 </template>
