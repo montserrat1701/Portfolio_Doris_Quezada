@@ -9,11 +9,14 @@ defineProps({
     <div class="container mx-auto ">
       <div class="grid grid-cols-6 md:grid-flow-col">
         <div
-          class="flex items-center justify-center w-13 h-12"
           v-for="skill in skills.data"
           :key="skill.id"
         >
-          <img :src="skill.image" :alt="skill.name" class="lg:h-20"/>
+          <template v-if="skill.name == 'Laravel'">
+            <div class="flex items-center justify-center w-13 h-12">
+              <img :src="skill.image" :alt="skill.name" class="lg:h-20"/>
+            </div>
+          </template>
         </div>
       </div>
     </div>

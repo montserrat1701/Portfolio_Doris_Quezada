@@ -25,7 +25,7 @@ defineProps({
         <!-- Promote tail-100 -->
         <Promote />
         <!-- About secondary -->
-        <About />
+        <About :abouts="abouts"/>
         <!-- Skills tail-100 -->
         <Skills :skills="skills"/>
         <!-- Portfolio primary -->

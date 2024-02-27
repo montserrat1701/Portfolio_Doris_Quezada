@@ -1,3 +1,9 @@
+<script setup>
+defineProps({
+  abouts: Object,
+});
+</script>
+
 <template>
     <section id="about" class="section bg-light-secondary dark:bg-dark-secondary">
       <div
