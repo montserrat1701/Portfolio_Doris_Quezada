@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\DB;
+
 use Inertia\Inertia;
 use App\Models\About;
 use App\Models\Project;
@@ -17,8 +19,22 @@ class AboutController extends Controller
      */
     public function index()
     {
+        
         $abouts = AboutResource::collection(About::with('project')->get());
         return Inertia::render('Abouts/Index', compact('abouts'));
+
+        /*
+        try {
+            // Intenta recuperar el texto de la tabla 'abouts' donde el valor del campo 'text' sea 'text 1'
+            $texto = DB::table('abouts')->where('text', 'text 1')->value('text');
+            
+            // Si se encuentra el texto, muestra la vista 'mostrar-texto'
+            return view('mostrar-texto', ['texto' => $texto]);
+        } catch (\Illuminate\Database\QueryException $e) {
+            // Si hay un error al ejecutar la consulta, muestra la vista 'error' con un mensaje apropiado
+            return view('error', ['mensaje' => 'Error al intentar acceder a la tabla "abouts".']);
+        }
+        */ 
     }
 
     /**

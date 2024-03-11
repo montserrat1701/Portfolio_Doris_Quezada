@@ -36,6 +36,6 @@ defineProps({
         <!-- Contact primary -->
         <ContactMe />
         <!-- Extraers primary -->
-        <Extraers :abouts="abouts"/>
+        <Extraers :abouts="abouts"/> 
     </FrontendLayout>
 </template>
