@@ -22,7 +22,8 @@ defineProps({
     <Head title="Doris Quezada | Graphic Designer & Student" />
     <FrontendLayout>
         <!-- Hero primary -->
-        <Hero />
+        <Extraers :abouts="abouts"/> 
+        <!--<Hero />-->
         <!-- Promote tail-100 -->
         <Promote />
         <!-- About secondary -->
@@ -36,6 +37,5 @@ defineProps({
         <!-- Contact primary -->
         <ContactMe />
         <!-- Extraers primary -->
-        <Extraers :abouts="abouts"/> 
     </FrontendLayout>
 </template>
