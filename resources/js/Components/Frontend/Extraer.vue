@@ -5,7 +5,7 @@
     lg:h-[90vh]
     flex
     items-center
-    bg-pink-100
+    bg-light-primary
     dark:bg-dark-navy-500
     py-32
     lg:py-0
