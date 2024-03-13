@@ -5,7 +5,7 @@
     lg:h-[90vh]
     flex
     items-center
-    bg-light-primary
+    bg-light-primary3
     dark:bg-dark-navy-500
     py-32
     lg:py-0
@@ -138,9 +138,13 @@
               </a>
             </div>
        </div>
-       <div class="flex flex-1 justify-end items-center h-full mt-8 md:mt-0">
-              <img class="rounded-lg" src="http://portfolio.test/img/foto4.jpeg" alt="Extraer"  />
-        </div>
+       <template v-for="about in abouts.data" :key="about.id">
+          <div v-if="about.text === 'title 1'">
+              <div class="flex flex-1 justify-end items-center h-full mt-8 md:mt-0">
+                <img :src="about.image" :alt="about.name"/>
+            </div>
+          </div>
+       </template>
       </div>
     </div>
   </section>
