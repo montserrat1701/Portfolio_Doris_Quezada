@@ -4,8 +4,8 @@ const showMobileMenu = ref("false");
 const scrollBg = ref(false);
 
 const navigations = [
-  { name: "Home", href: "#home" },
-  { name: "About me", href: "#about" },
+  { name: "Home", href: "#extraer" },
+  { name: "About me", href: "#aboutdb" },
   { name: "Projects", href: "#portfolio" },
   { name: "Knowledge", href: "#services" },
   { name: "Contact me", href: "#contact" },
@@ -18,8 +18,40 @@ onMounted(() => {
   window.addEventListener("scroll", () => {
     return window.scrollY > 50 ? setScrollBg(true) : setScrollBg(false);
   });
+  
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const target = document.querySelector(this.getAttribute('href'));
+      const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
+      const startPosition = window.pageYOffset;
+      const distance = targetPosition - startPosition;
+      const duration = 800; // Duración del desplazamiento en milisegundos
+      const startTime = performance.now();
+
+      function ease(t, b, c, d) {
+        t /= d / 2;
+        if (t < 1) return c / 2 * t * t + b;
+        t--;
+        return -c / 2 * (t * (t - 2) - 1) + b;
+      };
+
+      function scrollAnimation(currentTime) {
+        const elapsedTime = currentTime - startTime;
+        window.scrollTo(0, ease(elapsedTime, startPosition, distance, duration));
+        if (elapsedTime < duration) {
+          requestAnimationFrame(scrollAnimation);
+        }
+      };
+
+      requestAnimationFrame(scrollAnimation);
+    });
+  });
+
 });
 </script>
+
 <template>
   <nav
     class="w-full fixed z-20 border-gray-200 px-2 sm:px-4 py-2.5 rounded"

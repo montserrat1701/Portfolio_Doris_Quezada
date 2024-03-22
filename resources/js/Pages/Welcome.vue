@@ -9,6 +9,7 @@ import Portfolio from '@/Components/Frontend/Portfolio.vue';
 import Services from '@/Components/Frontend/Services.vue';
 import ContactMe from '@/Components/Frontend/ContactMe.vue';
 import Extraers from '@/Components/Frontend/Extraer.vue';
+import Aboutdb from '@/Components/Frontend/Aboutbd.vue';
 
 defineProps({
     skills: Object,
@@ -27,7 +28,8 @@ defineProps({
         <!-- Promote tail-100 -->
         <Promote />
         <!-- About secondary -->
-        <About :abouts="abouts"/>
+        <Aboutdb :abouts="abouts"/>
+        <!--<About :abouts="abouts"/>-->
         <!-- Skills tail-100 -->
         <Skills :skills="skills"/>
         <!-- Portfolio primary -->

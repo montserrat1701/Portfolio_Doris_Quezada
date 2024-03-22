@@ -39,7 +39,7 @@ defineProps({
               <P class="mb-4 text-indigo-300">Student of Computer Systems Engineering</P>
               <hr class="mb-8 opacity-90 dark:opacity-5" />
               <p class="mb-8 text-gray-500 dark:text-gray-300">
-                I´m a systems engineering student with a strong technical background in graphic 
+                I´m a systems engineering student with a s trong technical background in graphic 
                 design. My technical skills range from programming languages to creating visual 
                 content using graphic design tools. I have had the opportunity to work on school 
                 software development projects and have also implemented my graphic design foundations 

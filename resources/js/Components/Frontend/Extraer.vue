@@ -5,7 +5,7 @@
     lg:h-[90vh]
     flex
     items-center
-    bg-light-primary3
+    bg-light-primary
     dark:bg-dark-navy-500
     py-32
     lg:py-0
@@ -39,7 +39,7 @@
               {{ about.description }}</p>
           </template>
         </div>
-        <a href="#about" class="btn btn-md bg-indigo-300 text-white hover:bg-indigo-500 font-extrabold rounded-md">
+        <a href="#aboutdb" class="btn btn-md bg-indigo-300 text-white hover:bg-indigo-500 font-extrabold rounded-md">
           See More About Me
         </a>
         <div class="pt-12">
@@ -141,8 +141,8 @@
        <template v-for="about in abouts.data" :key="about.id">
           <div v-if="about.text === 'title 1'">
               <div class="flex flex-1 justify-end items-center h-full mt-8 md:mt-0">
-                <img :src="about.image" :alt="about.name"/>
-            </div>
+                <img class="rounded-lg w-[500px]" :src="about.image" :alt="about.name"/>
+              </div>
           </div>
        </template>
       </div>

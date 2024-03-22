@@ -16,30 +16,10 @@ class AboutResource extends JsonResource
      */
     public function toArray($request)
     {
-        // Obtener el nombre de la imagen
-        $imageName = $this->image;
-
-        // Calcular el hash del nombre de la imagen
-        $imageHash = md5($imageName);
-
-        // Obtener los primeros 6 dígitos del hash
-        $subfolder = substr($imageHash, 0, 6);
-
-        // Construir la ruta de la subcarpeta en el storage
-        $storagePath = 'public/' . $subfolder;
-
-        // Mover la imagen a la subcarpeta correspondiente
-        if (!Storage::disk('local')->exists($storagePath . '/' . $imageName)) {
-            Storage::disk('local')->move('public/' . $imageName, $storagePath . '/' . $imageName);
-        }
-
-        // Construir la URL completa de la imagen
-        $imageUrl = asset('storage/' . $subfolder . '/' . $imageName);
-
         return [
             'id' => $this->id,
             'text' => $this->text,
-            'image' => $imageUrl,
+            'image' => asset('/storage/' . $this->image),
             'project' => new ProjectResource($this->whenLoaded('project')),
             'description' => $this->description
         ];
