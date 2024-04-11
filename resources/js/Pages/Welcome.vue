@@ -11,6 +11,7 @@ import ContactMe from '@/Components/Frontend/ContactMe.vue';
 import Extraers from '@/Components/Frontend/Extraer.vue';
 import Aboutdb from '@/Components/Frontend/Aboutbd.vue';
 import Portfolio2 from '@/Components/Frontend/Portfolio2.vue';
+import Servicesdb from '@/Components/Frontend/Servicesdb.vue';
 
 defineProps({
     skills: Object,
@@ -36,7 +37,7 @@ defineProps({
         <!-- Portfolio primary -->
         <Portfolio2 :abouts="abouts" :skills="skills" :projects="projects" />
         <!-- Services secondary -->
-        <Services />
+        <Servicesdb :abouts="abouts" />
         <!-- Contact primary -->
         <ContactMe />
         <!-- Extraers primary -->

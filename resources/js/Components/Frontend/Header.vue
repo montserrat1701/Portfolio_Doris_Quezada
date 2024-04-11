@@ -7,7 +7,7 @@ const navigations = [
   { name: "Home", href: "#extraer" },
   { name: "About me", href: "#aboutdb" },
   { name: "Projects", href: "#portfoliodb" },
-  { name: "Knowledge", href: "#services" },
+  { name: "Knowledge", href: "#servicesdb" },
   { name: "Contact me", href: "#contact" },
 ];
 const setScrollBg = (value) => {
