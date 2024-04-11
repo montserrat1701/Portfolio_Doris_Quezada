@@ -6,7 +6,7 @@ const scrollBg = ref(false);
 const navigations = [
   { name: "Home", href: "#extraer" },
   { name: "About me", href: "#aboutdb" },
-  { name: "Projects", href: "#portfolio" },
+  { name: "Projects", href: "#portfoliodb" },
   { name: "Knowledge", href: "#services" },
   { name: "Contact me", href: "#contact" },
 ];

@@ -10,6 +10,7 @@ import Services from '@/Components/Frontend/Services.vue';
 import ContactMe from '@/Components/Frontend/ContactMe.vue';
 import Extraers from '@/Components/Frontend/Extraer.vue';
 import Aboutdb from '@/Components/Frontend/Aboutbd.vue';
+import Portfolio2 from '@/Components/Frontend/Portfolio2.vue';
 
 defineProps({
     skills: Object,
@@ -33,11 +34,12 @@ defineProps({
         <!-- Skills tail-100 -->
         <Skills :skills="skills"/>
         <!-- Portfolio primary -->
-        <Portfolio :skills="skills" :projects="projects" />
+        <Portfolio2 :abouts="abouts" :skills="skills" :projects="projects" />
         <!-- Services secondary -->
         <Services />
         <!-- Contact primary -->
         <ContactMe />
         <!-- Extraers primary -->
+        <!---->
     </FrontendLayout>
 </template>
