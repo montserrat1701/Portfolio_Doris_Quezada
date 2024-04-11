@@ -23,7 +23,7 @@ const filterProjects = (id) => {
 </script>
 <template>
   <div class="container mx-auto">
-    <nav class="mb-12 border-b-2 border-light-tail-100 dark:text-dark-navy-100">
+    <nav class="mb-12 border-b-2 border-indigo-500 dark:text-dark-navy-100">
       <ul class="flex flex-col lg:flex-row justify-evenly items-center">
         <li class="cursor-pointer capitalize m-4">
           <button

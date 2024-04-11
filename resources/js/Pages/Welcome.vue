@@ -1,17 +1,14 @@
 <script setup>
 import FrontendLayout from '@/Layouts/Frontend.vue';
 import { Head, Link } from '@inertiajs/vue3';
-import Hero from '@/Components/Frontend/Hero.vue';
 import Promote from '@/Components/Frontend/Promote.vue';
-import About from '@/Components/Frontend/About.vue';
 import Skills from '@/Components/Frontend/Skills.vue';
-import Portfolio from '@/Components/Frontend/Portfolio.vue';
-import Services from '@/Components/Frontend/Services.vue';
 import ContactMe from '@/Components/Frontend/ContactMe.vue';
 import Extraers from '@/Components/Frontend/Extraer.vue';
 import Aboutdb from '@/Components/Frontend/Aboutbd.vue';
 import Portfolio2 from '@/Components/Frontend/Portfolio2.vue';
 import Servicesdb from '@/Components/Frontend/Servicesdb.vue';
+import Promotedb from '@/Components/Frontend/Promotedb.vue';
 
 defineProps({
     skills: Object,
@@ -28,7 +25,7 @@ defineProps({
         <Extraers :abouts="abouts"/> 
         <!--<Hero />-->
         <!-- Promote tail-100 -->
-        <Promote />
+        <Promotedb :abouts="abouts" />
         <!-- About secondary -->
         <Aboutdb :abouts="abouts"/>
         <!--<About :abouts="abouts"/>-->
