@@ -180,7 +180,7 @@ const submit = () => {
           <textarea
             v-model="form.body"
             class="textarea border-pink-200"
-            placeholder="Your Meassage"
+            placeholder="Your Message"
             spellcheck="false"
           ></textarea>
           <span v-if="form.errors.body" class="text-sm m-2 text-red-400">{{

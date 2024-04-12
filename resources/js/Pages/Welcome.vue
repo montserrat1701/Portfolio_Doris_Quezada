@@ -1,14 +1,13 @@
 <script setup>
 import FrontendLayout from '@/Layouts/Frontend.vue';
 import { Head, Link } from '@inertiajs/vue3';
-import Promote from '@/Components/Frontend/Promote.vue';
 import Skills from '@/Components/Frontend/Skills.vue';
-import ContactMe from '@/Components/Frontend/ContactMe.vue';
 import Extraers from '@/Components/Frontend/Extraer.vue';
 import Aboutdb from '@/Components/Frontend/Aboutbd.vue';
 import Portfolio2 from '@/Components/Frontend/Portfolio2.vue';
 import Servicesdb from '@/Components/Frontend/Servicesdb.vue';
 import Promotedb from '@/Components/Frontend/Promotedb.vue';
+import ContactMedb from '@/Components/Frontend/ContactMedb.vue';
 
 defineProps({
     skills: Object,
@@ -36,7 +35,7 @@ defineProps({
         <!-- Services secondary -->
         <Servicesdb :abouts="abouts" />
         <!-- Contact primary -->
-        <ContactMe />
+        <ContactMedb :abouts="abouts" />
         <!-- Extraers primary -->
         <!---->
     </FrontendLayout>
