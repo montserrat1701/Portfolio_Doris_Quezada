@@ -23,6 +23,8 @@ onMounted(() => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
 
+      showMobileMenu.value = true;
+
       const target = document.querySelector(this.getAttribute('href'));
       const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
       const startPosition = window.pageYOffset;

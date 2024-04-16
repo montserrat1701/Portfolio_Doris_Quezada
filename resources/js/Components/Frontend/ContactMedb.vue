@@ -4,7 +4,7 @@
             <div class="flex flex-col items-center text-center"> <!-- flex 1 -->
                 <div v-for="about in abouts.data" :key="about.id">
                     <div v-if="about.text === 'title 10'">
-                        <h2 class="section-title font-extrabold">
+                        <h2 class="section-title font-extrabold text-teal-800">
                             {{ about.description }}
                         </h2>
                     </div>
@@ -18,7 +18,7 @@
             <div class="flex flex-col lg:flex-row lg:gap-x-8 items-center"> <!-- flex 2 -->
                 <div class="flex flex-1 flex-col items-start space-y-8 mb-12 lg:mb-0 lg:pt-2"> <!--flex antes de form-->
                     <div class="flex flex-col lg:flex-row gap-x-4"> <!-- gap 4 -->
-                        <div class="text-pink-400 rounded-sm w-14 h-14 flex items-start justify-center mt-2 mb-4 lg:mb-0 text-2xl">
+                        <div class="text-teal-700 rounded-sm w-14 h-14 flex items-start justify-center mt-2 mb-4 lg:mb-0 text-2xl">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
@@ -47,7 +47,7 @@
                                     </p>
                                 </div>
                                 <div v-if="about.text === 'text 13'">
-                                    <p class="text-indigo-400 font-normal">
+                                    <p class="text-purple-500 font-normal">
                                         {{ about.description }}
                                     </p>
                                 </div>
@@ -55,7 +55,7 @@
                         </div><!--end of div que hace que jale-->
                     </div> <!-- end of gap 4 -->
                     <div class="flex flex-col lg:flex-row gap-x-4"> <!--gap 4.2-->
-                        <div class="text-pink-400 rounded-sm w-14 h-14 flex items-start justify-center mt-2 mb-4 lg:mb-0 text-2xl">
+                        <div class="text-teal-700 rounded-sm w-14 h-14 flex items-start justify-center mt-2 mb-4 lg:mb-0 text-2xl">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
@@ -89,7 +89,7 @@
                                     </p>
                                 </div>
                                 <div v-if="about.text === 'text 15'">
-                                    <p class="text-indigo-400 font-normal">
+                                    <p class="text-purple-500 font-normal">
                                         {{ about.description }}
                                     </p>
                                 </div>
@@ -98,28 +98,28 @@
                     </div>
                 </div> <!--end of flex antes del form-->
                 <form @submit.prevent="submit" class="space-y-8 w-full max-w-md">
-                    <div v-if="showMessage" class="m-2 p-4 bg-light-tail-500 dark:bg-dark-navy-100 text-light-secondary rounded-lg">
+                    <div v-if="showMessage" class="m-2 p-4 bg-teal-700 dark:bg-dark-navy-100 text-light-secondary rounded-lg">
                         Thank you for contacting me.
                     </div>
                     <div class="flex gap-8">
                         <div> <!--div input 1-->
-                            <input v-model="form.name" type="text" class="input border-b-1 border-pink-200" placeholder="Your Name"/>
+                            <input v-model="form.name" type="text" class="input border-b-1 border-purple-400" placeholder="Your Name"/>
                             <span v-if="form.errors.name" class="text-sm m-2 text-red-400">
                                 {{ form.errors.name }}
                             </span>
                         </div>
                         <div> <!--div input 2-->
-                            <input v-model="form.email" type="email" class="input border-b-1 border-pink-200" placeholder="Your Email"/>
+                            <input v-model="form.email" type="email" class="input border-b-1 border-purple-400" placeholder="Your Email"/>
                             <span v-if="form.errors.email" class="text-sm m-2 text-red-400">
                                 {{ form.errors.email }}
                             </span>
                         </div>
                     </div>
-                    <textarea v-model="form.body" class="textarea border-pink-200" placeholder="Your Message" spellcheck="false"></textarea>
+                    <textarea v-model="form.body" class="textarea border-purple-400" placeholder="Your Message" spellcheck="false"></textarea>
                     <span v-if="form.errors.body" class="text-sm m-2 text-red-400">
                         {{ form.errors.body }}
                     </span>
-                    <button class="btn btn-lg bg-indigo-300 hover:bg-indigo-500 text-white rounded-md font-extrabold">
+                    <button class="btn btn-lg bg-teal-800 hover:bg-purple-400 text-white rounded-md font-extrabold">
                         Send message
                     </button>
                 </form>
