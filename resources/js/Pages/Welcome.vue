@@ -8,6 +8,8 @@ import Portfolio2 from '@/Components/Frontend/Portfolio2.vue';
 import Servicesdb from '@/Components/Frontend/Servicesdb.vue';
 import Promotedb from '@/Components/Frontend/Promotedb.vue';
 import ContactMedb from '@/Components/Frontend/ContactMedb.vue';
+import Promote2 from '@/Components/Frontend/Promote2.vue';
+import Promote3 from '@/Components/Frontend/Promote3.vue';
 
 defineProps({
     skills: Object,
@@ -32,8 +34,12 @@ defineProps({
         <Skills :skills="skills"/>
         <!-- Portfolio primary -->
         <Portfolio2 :abouts="abouts" :skills="skills" :projects="projects" />
+        <!-- Promote 2-->
+        <Promote2 :abouts="abouts" />
         <!-- Services secondary -->
         <Servicesdb :abouts="abouts" />
+        <!-- Promote 3-->
+        <Promote3 :abouts="abouts" />
         <!-- Contact primary -->
         <ContactMedb :abouts="abouts" />
         <!-- Extraers primary -->

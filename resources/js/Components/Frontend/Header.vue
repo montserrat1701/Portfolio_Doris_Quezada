@@ -56,8 +56,8 @@ onMounted(() => {
   <nav
     class="w-full fixed z-20 border-gray-200 px-2 sm:px-4 py-2.5 rounded"
     :class="{
-      'bg-indigo-100 dark:bg-dark-primary': scrollBg,
-      'bg-indigo-100 dark:bg-slate-800': !scrollBg,
+      'bg-light-primary dark:bg-slate-800': !scrollBg,
+      'bg-light-primary dark:bg-dark-primary': scrollBg,
     }"
   >
     <div
@@ -66,7 +66,7 @@ onMounted(() => {
     >
       <a href="https://github.com/montserrat1701" class="flex items-center">
         <img
-          src="http://portfolio.test/img/logo3.png"
+          src="http://portfolio.test/img/logo10.png"
           class="mr-3 h-12 sm:h-12"
           alt="Logo"
           style="width: 65px; height: 65px"
@@ -77,10 +77,10 @@ onMounted(() => {
             text-xl
             font-extrabold
             whitespace-nowrap
-            text-light-tail-500
+            text-indigo-300
             dark:text-white
           "
-          >MY PORTFOLIO</span
+          ></span
         >
       </a>
       <button
@@ -129,7 +129,7 @@ onMounted(() => {
             p-4
             mt-4
             rounded-lg
-            border border-indigo-500
+            border border-teal-700
             dark:border-dark-navy-100
             md:flex-row md:space-x-8 md:mt-0 md:font-medium md:border-0
           "
@@ -142,11 +142,10 @@ onMounted(() => {
                 py-2
                 pr-4
                 pl-3
-                text-light-tail-500
-                font-semibold
+                text-teal-700
                 rounded
                 dark:text-dark-navy-100
-                hover:text-pink-300
+                hover:text-purple-500
                 dark:hover:text-white
               "
               aria-current="page"

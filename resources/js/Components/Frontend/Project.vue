@@ -23,10 +23,10 @@ defineProps({
     </div>
     <span
       class="
-       group-hover:text-pink-300
+       group-hover:text-purple-800
         text-2xl
         font-semibold
-        text-indigo-400
+        text-teal-800
         capitalize
         mb-3
       "
@@ -34,9 +34,9 @@ defineProps({
     >
     <h3
       class="
-      group-hover:text-pink-300
+      group-hover:text-purple-500
         capitalize
-        text-gray-500 text-sm
+        text-teal-700 text-sm
         mb-3
       "
     >

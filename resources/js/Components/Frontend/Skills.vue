@@ -5,7 +5,7 @@ defineProps({
 </script>
 
 <template>
-  <section class="bg-ingino-100 dark:bg-dark-navy-500 py-16">
+  <section class="bg-teal-600 dark:bg-dark-navy-500 py-16">
     <div class="container mx-auto ">
       <div class="grid grid-cols-6 md:grid-flow-col">
         <div

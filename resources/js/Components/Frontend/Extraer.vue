@@ -10,15 +10,16 @@
     py-32
     lg:py-0
     overflow-hidden"
+     
   >
     <div class="container mx-auto  h-full">
-      <div class="flex flex-col md:flex-row items-center h-full pt-8">
+      <div class="flex flex-col md:flex-row items-center h-full pt-16">
        <div class="flex-1 flex flex-col items-center lg:items-start">
-        <p class="text-lg text-dark-accent font-extrabold text-indigo-300 text-md mb-[22px]">Hey, I'm Doris! 👾</p>
+        <p class="text-lg text-dark-accent  text-purple-800 text-md mb-[22px]">Hey, I'm Doris! 👩🏻‍💻</p>
         <div v-for="about in abouts.data" :key="about.id">
           <template v-if="about.text === 'title 1'">
             <div class="flex items-center justify-center">
-              <h1 class="text-4xl leading-[44px] md:text-5xl md:leading-tight lg:text-7xl lg:leading-[1.2] font-bold md:tracking-[-2px]">
+              <h1 class="text-4xl leading-[44px] md:text-5xl md:leading-tight lg:text-7xl lg:leading-[1.2] font-extrabold text-teal-800 md:tracking-[-2px] ">
                 {{ about.description }}
               </h1>
             </div>
@@ -33,17 +34,17 @@
               md:pt-6 md:pb-12
               max-w-[480px]
               text-lg text-center
-              text-gray-600
+              text-teal-800
               lg:text-left"
             >
               {{ about.description }}</p>
           </template>
         </div>
-        <a href="#aboutdb" class="btn btn-md bg-indigo-300 text-white hover:bg-indigo-500 font-extrabold rounded-md">
+        <a href="#aboutdb" class="btn btn-md bg-teal-700 text-white hover:bg-purple-400 font-extrabold rounded-md">
           See More About Me
         </a>
         <div class="pt-12">
-          <h5 class="text lg flex justify-center lg:justify-start items-center text-xl font-extrabold text-dark-primary dark:text-white mb-2">
+          <h5 class="text lg flex justify-center lg:justify-start items-center text-xl font-extrabold text-teal-800 dark:text-white mb-2">
             Follow me on
           </h5>
         </div>
@@ -141,7 +142,7 @@
        <template v-for="about in abouts.data" :key="about.id">
           <div v-if="about.text === 'title 1'">
               <div class="flex flex-1 justify-end items-center h-full mt-8 md:mt-0">
-                <img class="rounded-lg w-[500px]" :src="about.image" :alt="about.name"/>
+                <img class="rounded-lg w-[520px]" :src="about.image" :alt="about.name"/>
               </div>
           </div>
        </template>
