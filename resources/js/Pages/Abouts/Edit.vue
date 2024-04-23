@@ -2,6 +2,7 @@
     <Head title="New Information" />
     <BreezeAuthenticatedLayout>
         <template #header>
+            <br />
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
                 New Information
             </h2>

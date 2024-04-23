@@ -2,16 +2,17 @@
     <Head title="New Project" />
     <BreezeAuthenticatedLayout>
         <template #header>
-            <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                New Project
+            <br />
+            <h2 class="font-semibold text-xl text-purple-500 leading-tight">
+                NEW PROJECT
             </h2>
         </template>
 
         <div class="py-12">
-            <div class="max-w-md mx-auto sm:px-6 lg:px-8 bg-white">
+            <div class="max-w-md mx-auto sm:px-6 lg:px-8 bg-white rounded-xl">
                 <form class="p-4" @submit.prevent="submit">
                     <div>
-                        <InputLabel for="skill_id" value="Skill" />
+                        <InputLabel for="skill_id" value="Skill" class="font-semibold text-gary-800"/>
                         <select 
                         v-model="form.skill_id" 
                         id="skill_id" 
@@ -32,7 +33,8 @@
                         <InputError class="mt-2" :message="form.errors.skill_id" />
                     </div>
                     <div>
-                        <InputLabel for="name" value="Name" />
+                        <br />
+                        <InputLabel for="name" value="Name" class="font-semibold text-gary-800"/>
 
                         <TextInput
                             id="name"
@@ -47,7 +49,8 @@
                     </div>
 
                     <div>
-                        <InputLabel for="description" value="Description" />
+                        <br />
+                        <InputLabel for="description" value="Description" class="font-semibold text-gary-800"/>
 
                         <TextInput
                             id="description"
@@ -61,7 +64,8 @@
                     </div>
 
                     <div>
-                        <InputLabel for="project_url" value="URL" />
+                        <br />
+                        <InputLabel for="project_url" value="URL" class="font-semibold text-gary-800"/>
 
                         <TextInput
                             id="project_url"
@@ -75,7 +79,8 @@
                     </div>
 
                     <div class="mt-2">
-                        <InputLabel for="image" value="Image" />
+                        <br />
+                        <InputLabel for="image" value="Image" class="font-semibold text-gary-800"/>
 
                         <TextInput
                             id="image"
@@ -88,7 +93,7 @@
                     </div>
 
                     <div class="flex items-center justify-end mt-4">
-                        <PrimaryButton class="ms-4" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
+                        <PrimaryButton class="ms-4 bg-teal-700 hover:bg-purple-500" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
                             ADD
                         </PrimaryButton>
                     </div>

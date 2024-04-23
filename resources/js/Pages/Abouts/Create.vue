@@ -2,16 +2,17 @@
     <Head title="New About" />
     <BreezeAuthenticatedLayout>
         <template #header>
-            <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                New About
+            <br />
+            <h2 class="font-semibold text-xl text-purple-500 leading-tight">
+                NEW ABOUT
             </h2>
         </template>
 
         <div class="py-12">
-            <div class="max-w-md mx-auto sm:px-6 lg:px-8 bg-white">
+            <div class="max-w-md mx-auto sm:px-6 lg:px-8 bg-white rounded-xl">
                 <form class="p-4" @submit.prevent="submit">
                     <div>
-                        <InputLabel for="project_id" value="Project" />
+                        <InputLabel for="project_id" value="Project" class="font-semibold text-gary-800" />
                         <select 
                         v-model="form.project_id" 
                         id="project_id" 
@@ -24,7 +25,7 @@
                             py-2
                             text-base
                             border-gray-300
-                            focus:outline-none focus:ring-indigo-500 focus:border-indigo-500
+                            focus:outline-none focus:ring-teal-700 focus:border-teal-700
                             sm:text-sm
                             rounded-md">
                             <option v-for="project in projects" :key="project.id" :value="project.id">{{ project.name }}</option>
@@ -32,7 +33,8 @@
                         <InputError class="mt-2" :message="form.errors.project_id" />
                     </div>
                     <div>
-                        <InputLabel for="text" value="Text" />
+                        <br />
+                        <InputLabel for="text" value="Text" class="font-semibold text-gary-800"/>
 
                         <TextInput
                             id="text"
@@ -47,7 +49,8 @@
                     </div>
 
                     <div>
-                        <InputLabel for="description" value="Description" />
+                        <br />
+                        <InputLabel for="description" value="Description" class="font-semibold text-gray-800"/>
 
                         <TextInput
                             id="description"
@@ -62,7 +65,8 @@
 
 
                     <div class="mt-2">
-                        <InputLabel for="image" value="Image" />
+                        <br />
+                        <InputLabel for="image" value="Image" class="font-semibold text-gray-800" />
 
                         <TextInput
                             id="image"
@@ -75,7 +79,7 @@
                     </div>
 
                     <div class="flex items-center justify-end mt-4">
-                        <PrimaryButton class="ms-4" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
+                        <PrimaryButton class="ms-4 bg-teal-700 hover:bg-purple-500" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
                             ADD
                         </PrimaryButton>
                     </div>

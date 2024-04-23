@@ -33,9 +33,10 @@
               pb-8
               md:pt-6 md:pb-12
               max-w-[480px]
-              text-lg text-center
-              text-teal-800
-              lg:text-left"
+              text-xl text-center
+              text-gray-700
+              lg:text-left
+              "
             >
               {{ about.description }}</p>
           </template>
@@ -156,3 +157,5 @@ defineProps({
   abouts: Object
 });
 </script>
+
+    <!--DEGRADADO: bg-gradient-to-tr from-slate-400 via-pink-200 to-slate-400 dark:bg-gradient-to-tr dark:from-gray-800 dark:via-pink-600 dark:to-gray-800 h-20-->

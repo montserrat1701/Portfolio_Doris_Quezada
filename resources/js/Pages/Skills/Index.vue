@@ -2,7 +2,8 @@
     <Head title="Skills Index" />
     <BreezeAuthenticatedLayout>
         <template #header>
-            <h2 class="font-semibold text-xl text-white leading-tight">
+            <br />
+            <h2 class="font-semibold text-xl text-teal-800 leading-tight">
                 EDIT YOUR SKILLS
             </h2>
         </template>
@@ -15,10 +16,11 @@
                         class="
                             px-4 
                             py-2 
-                            bg-indigo-500 
+                            bg-purple-500
                             dark:bg-gray-700
-                            hover:bg-indigo-700 
+                            hover:bg-teal-800 
                             text-white 
+                            font-extrabold
                             rounded-md
                         "
                         >New Skill</Link>
@@ -26,7 +28,7 @@
 
                 <div class="relative overflow-x-auto">
                     <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                        <thead class="text-xs text-white uppercase bg-indigo-500 dark:bg-gray-700 dark:text-gray-400">
+                        <thead class="text-xs text-white uppercase bg-teal-700 dark:bg-gray-700 dark:text-gray-400">
                             <tr>
                                 <th scope="col" class="px-6 py-3">
                                     ID
