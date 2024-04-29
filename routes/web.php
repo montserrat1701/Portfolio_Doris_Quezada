@@ -22,7 +22,7 @@ use Inertia\Inertia;
 */
 
 Route::get('/', [WelcomeController::class, 'welcome'])->name('welcome');
-Route::post('/contact', ContactController::class)->name('contact');
+Route::post('/contactdb', ContactController::class)->name('contact');
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');

@@ -31,3 +31,4 @@ class ContactMail extends Mailable
         return $this->subject('Mail from Portfolio')->replyTo($this->email)->view('emails.contact');
     }
 }
+
