@@ -50,7 +50,7 @@
                         </div>
                     </template>
                 </div>
-                <a href="#contact" class="btn btn-md bg-teal-700 hover:bg-purple-400 dark:bg-dark-primary text-white rounded-md font-extrabold">
+                <a href="#contactdb" class="btn btn-md bg-teal-700 hover:bg-purple-400 dark:bg-dark-primary text-white rounded-md font-extrabold">
                         Contact me
                 </a>
             </div>

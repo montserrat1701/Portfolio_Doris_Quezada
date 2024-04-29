@@ -3,7 +3,7 @@
     <BreezeAuthenticatedLayout>
         <template #header>
             <br />
-            <h2 class="font-semibold text-xl text-teal-800 leading-tight">
+            <h2 class="font-semibold text-xl text-purple-500 leading-tight">
                 NEW SKILL
             </h2>
         </template>
