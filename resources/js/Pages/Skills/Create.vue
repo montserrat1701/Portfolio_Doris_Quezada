@@ -17,7 +17,7 @@
                         <TextInput
                             id="name"
                             type="text"
-                            class="mt-1 block w-full"
+                            class="mt-1 block w-full text-gray-500 focus:outline-none focus:ring-purple-500 focus:border-purple-500"
                             v-model="form.name"
                             autofocus
                             autocomplete="username"
@@ -33,7 +33,7 @@
                         <TextInput
                             id="image"
                             type="file"
-                            class="mt-1 block w-full"
+                            class="mt-1 block w-full text-gray-500"
                             @input="form.image = $event.target.files[0]"
                         />
 

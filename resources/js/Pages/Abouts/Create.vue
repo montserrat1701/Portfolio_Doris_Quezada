@@ -25,7 +25,8 @@
                             py-2
                             text-base
                             border-gray-300
-                            focus:outline-none focus:ring-teal-700 focus:border-teal-700
+                            text-gray-500
+                            focus:outline-none focus:ring-purple-500 focus:border-purple-500
                             sm:text-sm
                             rounded-md">
                             <option v-for="project in projects" :key="project.id" :value="project.id">{{ project.name }}</option>
@@ -39,7 +40,7 @@
                         <TextInput
                             id="text"
                             type="text"
-                            class="mt-1 block w-full"
+                            class="mt-1 block w-full text-gray-500 focus:outline-none focus:ring-purple-500 focus:border-purple-500"
                             v-model="form.text"
                             autofocus
                             autocomplete="text"
@@ -55,7 +56,7 @@
                         <TextInput
                             id="description"
                             type="text"
-                            class="mt-1 block w-full rounded-md"
+                            class="mt-1 block w-full rounded-md text-gray-500 focus:outline-none focus:ring-purple-500 focus:border-purple-500"
                             v-model="form.description"
                             autocomplete="description"
                         />
@@ -71,7 +72,7 @@
                         <TextInput
                             id="image"
                             type="file"
-                            class="mt-1 block w-full"
+                            class="mt-1 block w-full text-gray-500"
                             @input="form.image = $event.target.files[0]"
                         />
 

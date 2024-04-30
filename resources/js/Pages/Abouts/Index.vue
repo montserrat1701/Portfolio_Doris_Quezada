@@ -70,6 +70,7 @@
                                     <Link 
                                         :href="route('abouts.edit', about.id)" 
                                         class="font-medium text-blue-500 hover:text-blue-700 mr-2"
+                                        @click="handleEditClick"
                                         >Edit</Link
                                     >
                                     <Link 
@@ -101,4 +102,8 @@ import { Head, Link } from '@inertiajs/vue3';
 defineProps({
     abouts: Object,
 });
+
+const handleEditClick = () => {
+    console.log('Botón de Editar clickeado'); // Agrega este console.log()
+};
 </script>

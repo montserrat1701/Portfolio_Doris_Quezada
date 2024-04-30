@@ -24,8 +24,9 @@
                             pr-10
                             py-2
                             text-base
+                            text-gray-500
                             border-gray-300
-                            focus:outline-none focus:ring-indigo-500 focus:border-indigo-500
+                            focus:outline-none focus:ring-purple-500 focus:border-purple-500
                             sm:text-sm
                             rounded-md">
                             <option v-for="skill in skills" :key="skill.id" :value="skill.id">{{ skill.name }}</option>
@@ -39,7 +40,7 @@
                         <TextInput
                             id="name"
                             type="text"
-                            class="mt-1 block w-full"
+                            class="mt-1 block w-full text-gray-500 focus:outline-none focus:ring-purple-500 focus:border-purple-500"
                             v-model="form.name"
                             autofocus
                             autocomplete="name"
@@ -55,7 +56,7 @@
                         <TextInput
                             id="description"
                             type="text"
-                            class="mt-1 block w-full rounded-md"
+                            class="mt-1 block w-full rounded-md text-gray-500 focus:outline-none focus:ring-purple-500 focus:border-purple-500"
                             v-model="form.description"
                             autocomplete="description"
                         />
@@ -70,7 +71,7 @@
                         <TextInput
                             id="project_url"
                             type="text"
-                            class="mt-1 block w-full"
+                            class="mt-1 block w-full text-gray-500 focus:outline-none focus:ring-purple-500 focus:border-purple-500"
                             v-model="form.project_url"
                             autocomplete="projecturl"
                         />
@@ -85,7 +86,7 @@
                         <TextInput
                             id="image"
                             type="file"
-                            class="mt-1 block w-full"
+                            class="mt-1 block w-full text-gray-500 focus:outline-none focus:ring-purple-500 focus:border-purple-500"
                             @input="form.image = $event.target.files[0]"
                         />
 

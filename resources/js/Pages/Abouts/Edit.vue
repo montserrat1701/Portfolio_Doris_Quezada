@@ -3,16 +3,16 @@
     <BreezeAuthenticatedLayout>
         <template #header>
             <br />
-            <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                New Information
+            <h2 class="font-semibold text-xl text-purple-500 leading-tight">
+                EDIT INFORMATION
             </h2>
         </template>
 
         <div class="py-12">
-            <div class="max-w-md mx-auto sm:px-6 lg:px-8 bg-white">
+            <div class="max-w-md mx-auto sm:px-6 lg:px-8 bg-white rounded-xl">
                 <form class="p-4" @submit.prevent="submit">
                     <div>
-                        <InputLabel for="project_id" value="Project" />
+                        <InputLabel for="project_id" value="Project" class="font-semibold text-gary-800"/>
                         <select 
                         v-model="form.project_id" 
                         id="project_id" 
@@ -25,20 +25,22 @@
                             py-2
                             text-base
                             border-gray-300
-                            focus:outline-none focus:ring-indigo-500 focus:border-indigo-500
+                            focus:outline-none focus:ring-purple-500 focus:border-purple-500
                             sm:text-sm
-                            rounded-md">
+                            rounded-md
+                            text-gray-500">
                             <option v-for="project in projects" :key="project.id" :value="project.id">{{ project.name }}</option>
                             <InputError class="mt-2" :message="$page.props.errors.project_id" />
                         </select>
                     </div>
                     <div>
-                        <InputLabel for="text" value="Text" />
+                        <br />
+                        <InputLabel for="text" value="Text" class="font-semibold text-gary-800"/>
 
                         <TextInput
                             id="text"
                             type="text"
-                            class="mt-1 block w-full"
+                            class="mt-1 block w-full text-gray-500 focus:outline-none focus:ring-purple-500 focus:border-purple-500"
                             v-model="form.text"
                             autofocus
                             autocomplete="text"
@@ -48,12 +50,13 @@
                     </div>
 
                     <div>
-                        <InputLabel for="description" value="Description" />
+                        <br />
+                        <InputLabel for="description" value="Description" class="font-semibold text-gary-800"/>
 
                         <TextInput
                             id="description"
                             type="text"
-                            class="mt-1 block w-full rounded-md"
+                            class="mt-1 block w-full rounded-md text-gray-500 focus:outline-none focus:ring-purple-500 focus:border-purple-500"
                             v-model="form.description"
                             autocomplete="description"
                         />
@@ -62,12 +65,13 @@
                     </div>
 
                     <div class="mt-2">
-                        <InputLabel for="image" value="Image" />
+                        <br />
+                        <InputLabel for="image" value="Image" class="font-semibold text-gary-800"/>
 
                         <TextInput
                             id="image"
                             type="file"
-                            class="mt-1 block w-full"
+                            class="mt-1 block w-full text-gray-500"
                             @input="form.image = $event.target.files[0]"
                         />
 
@@ -75,7 +79,7 @@
                     </div>
 
                     <div class="flex items-center justify-end mt-4">
-                        <PrimaryButton class="ms-4">
+                        <PrimaryButton class="ms-4 bg-teal-700 hover:bg-purple-500">
                             UPDATE
                         </PrimaryButton>
                     </div>
