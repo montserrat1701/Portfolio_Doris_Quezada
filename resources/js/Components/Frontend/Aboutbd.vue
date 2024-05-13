@@ -14,8 +14,8 @@
         }">
         <div class="flex flex-col xl:flex-row gap-24">
             <template v-for="about in abouts.data" :key="about.id">
-                <div v-if="about.text === 'title 2'">
-                    <img class="object-cover h-auto w-auto  md:mx-auto lg:mx-0 rounded-2xl" :src="about.image" :alt="about.name"/>
+                <div v-if="about.text === 'title 2'" class="h-96">
+                    <img class="object-cover w-full  md:mx-auto lg:mx-0 rounded-2xl" :src="about.image" :alt="about.name"/>
                 </div>
             </template>
             <div class="flex flex-col items-center text-center lg:items-start lg:text-left">
