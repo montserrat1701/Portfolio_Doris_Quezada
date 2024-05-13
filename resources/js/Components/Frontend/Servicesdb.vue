@@ -31,13 +31,17 @@
             </div>
             <div class="grid lg:grid-cols-4 gap-8">
                 <div class="bg-purple-400 dark:bg-dark-navy-500 p-6 rounded-2xl">
-                    <div class="text-indigo-500 rounded-sm flex justify-center items-center mb-24">
-                        <img
-                            src="http://portfolio.test/img/pixel2.jpg"
-                            class="mr-3 h-12 sm:h-12"
-                            alt="Logo"
-                            style="width: 200px; height: 150px"
-                        />
+                    <div class="rounded-sm flex justify-center items-center mb-24">
+                        <div v-for="about in abouts.data" :key="about.id"> 
+                            <template v-if="about.text == 'title 5'">
+                                <img 
+                                    class="mr-3 h-12 sm:h-12 rounded-xl" 
+                                    :src="about.image" 
+                                    :alt="about.name"
+                                    style="width: 200px; height: 150px"
+                                />
+                            </template>
+                        </div>
                     </div>
                     <div v-for="about in abouts.data" :key="about.id"><!-- abouts -->
                         <template v-if="about.text === 'title 5'"><!-- sacar el texto especifico -->
@@ -53,13 +57,17 @@
                     </div>
                 </div>
                 <div class="bg-purple-200 dark:bg-dark-navy-500 p-6 rounded-2xl">
-                    <div class="text-indigo-500 rounded-sm flex justify-center items-center mb-24">
-                        <img
-                            src="http://portfolio.test/img/pixel3.jpg"
-                            class="mr-3 h-12 sm:h-12"
-                            alt="Logo"
-                            style="width: 200px; height: 150px"
-                        />
+                    <div class="rounded-sm flex justify-center items-center mb-24">
+                        <div v-for="about in abouts.data" :key="about.id"> 
+                            <template v-if="about.text == 'title 6'">
+                                <img 
+                                    class="mr-3 h-12 sm:h-12 rounded-xl" 
+                                    :src="about.image" 
+                                    :alt="about.name"
+                                    style="width: 200px; height: 150px"
+                                />
+                            </template>
+                        </div>
                     </div>
                     <div v-for="about in abouts.data" :key="about.id"><!-- abouts -->
                         <template v-if="about.text === 'title 6'"><!-- sacar el texto especifico -->
@@ -75,13 +83,17 @@
                     </div>
                 </div>
                 <div class="bg-purple-400 dark:bg-dark-navy-500 p-6 rounded-2xl">
-                    <div class="text-indigo-500 rounded-sm flex justify-center items-center mb-24">
-                        <img
-                            src="http://portfolio.test/img/pixel4.jpg"
-                            class="mr-3 h-12 sm:h-12"
-                            alt="Logo"
-                            style="width: 200px; height: 150px"
-                        />
+                    <div class="rounded-sm flex justify-center items-center mb-24">
+                        <div v-for="about in abouts.data" :key="about.id"> 
+                            <template v-if="about.text == 'title 7'">
+                                <img 
+                                    class="mr-3 h-12 sm:h-12 rounded-xl" 
+                                    :src="about.image" 
+                                    :alt="about.name"
+                                    style="width: 200px; height: 150px"
+                                />
+                            </template>
+                        </div>
                     </div>
                     <div v-for="about in abouts.data" :key="about.id">
                         <template v-if="about.text === 'title 7'">
@@ -97,13 +109,17 @@
                     </div>
                 </div>
                 <div class="bg-purple-200 dark:bg-dark-navy-500 p-6 rounded-2xl">
-                    <div class="text-indigo-500 rounded-sm flex justify-center items-center mb-24">
-                        <img
-                            src="http://portfolio.test/img/pixel.jpeg"
-                            class="mr-3 h-12 sm:h-12"
-                            alt="Logo"
-                            style="width: 200px; height: 150px"
-                        />
+                    <div class="rounded-sm flex justify-center items-center mb-24">
+                        <div v-for="about in abouts.data" :key="about.id"> 
+                            <template v-if="about.text == 'title 8'">
+                                <img 
+                                    class="mr-3 h-12 sm:h-12 rounded-xl" 
+                                    :src="about.image" 
+                                    :alt="about.name"
+                                    style="width: 200px; height: 150px"
+                                />
+                            </template>
+                        </div>
                     </div>
                     <div v-for="about in abouts.data" :key="about.id">
                         <template v-if="about.text === 'title 8'">

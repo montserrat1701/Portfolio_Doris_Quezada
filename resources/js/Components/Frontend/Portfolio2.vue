@@ -6,12 +6,12 @@
       <div class="flex flex-col items-center text-center">
         <div v-for="about in abouts.data" :key="about.id">
           <template v-if="about.text === 'title 3'">
-            <h2 class="section-title font-extrabold text-purple-500">
+            <h2 class="section-title font-extrabold text-purple-800">
               {{ about.description }}
             </h2>
           </template>
           <template v-if="about.text === 'text 4'">
-            <p class="subtitle text-gray-500 dark:text-gray-300">
+            <p class="subtitle text-gray-800 dark:text-gray-300">
               {{ about.description }}
             </p>
           </template>

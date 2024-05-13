@@ -31,7 +31,7 @@ defineProps({
         <Aboutdb :abouts="abouts"/>
         <!--<About :abouts="abouts"/>-->
         <!-- Skills tail-100 -->
-        <Skills :skills="skills"/>
+        <Skills :skills="skills" />
         <!-- Portfolio primary -->
         <Portfolio2 :abouts="abouts" :skills="skills" :projects="projects" />
         <!-- Promote 2-->
@@ -39,7 +39,7 @@ defineProps({
         <!-- Services secondary -->
         <Servicesdb :abouts="abouts" />
         <!-- Promote 3-->
-        <Promote3 :abouts="abouts" />
+        <!--<Promote3 :abouts="abouts" />-->
         <!-- Contact primary -->
         <ContactMedb :abouts="abouts" />
         <!-- Extraers primary -->

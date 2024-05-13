@@ -4,7 +4,7 @@
             <div class="flex flex-col items-center text-center"> <!-- flex 1 -->
                 <div v-for="about in abouts.data" :key="about.id">
                     <div v-if="about.text === 'title 10'">
-                        <h2 class="section-title font-extrabold text-teal-800">
+                        <h2 class="section-title font-extrabold text-purple-800">
                             {{ about.description }}
                         </h2>
                     </div>
