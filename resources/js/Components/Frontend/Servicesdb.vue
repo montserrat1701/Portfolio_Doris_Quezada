@@ -23,7 +23,7 @@
                         </h2>
                     </template>
                     <template v-if="about.text === 'text 5'">
-                        <p class="subtitle text-gray-600 dark:text-gray-300">
+                        <p class="subtitle text-gray-800 dark:text-gray-300">
                             {{ about.description }}
                         </p>   
                     </template>

@@ -9,7 +9,7 @@
                         </h2>
                     </div>
                     <div v-if ="about.text === 'text 11'">
-                        <p class="subtitle text-gray-500 dark:text-gray-300">
+                        <p class="subtitle text-gray-800 dark:text-gray-300">
                             {{ about.description }}
                         </p>
                     </div>
