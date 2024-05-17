@@ -19,12 +19,6 @@ class SkillResource extends JsonResource
             'name'=> $this->name,
             'image'=> asset('/storage/' . $this->image),
         ];
-        /*
-        if ($request->file()) {
-            $fileName = $request->logo_url->getClientOriginalName();
-            $subfolderName = substr($fileName, 0, 6);
-            $filePath = $request->file('logo_url')->storeAs('skills/' . $subfolderName, $fileName, 'public');
-            $user->logo_url = '/storage/' . $filePath;
-        }*/
+  
     }
 }
