@@ -9,7 +9,6 @@ import Servicesdb from '@/Components/Frontend/Servicesdb.vue';
 import Promotedb from '@/Components/Frontend/Promotedb.vue';
 import ContactMedb from '@/Components/Frontend/ContactMedb.vue';
 import Promote2 from '@/Components/Frontend/Promote2.vue';
-import Promote3 from '@/Components/Frontend/Promote3.vue';
 
 defineProps({
     skills: Object,
@@ -38,8 +37,6 @@ defineProps({
         <Promote2 :abouts="abouts" />
         <!-- Services secondary -->
         <Servicesdb :abouts="abouts" />
-        <!-- Promote 3-->
-        <!--<Promote3 :abouts="abouts" />-->
         <!-- Contact primary -->
         <ContactMedb :abouts="abouts" />
         <!-- Extraers primary -->
