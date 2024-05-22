@@ -4,7 +4,7 @@
         <template #header>
             <br />
             <h2 class="font-semibold text-xl text-teal-800 leading-tight">
-                EDIT YOUR PROJECTS
+                MANAGE YOUR PROJECTS
             </h2>
         </template>
 
